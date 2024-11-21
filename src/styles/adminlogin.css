@@ -1,50 +1,42 @@
-
-
-.admin-login{
-   width: 100%;
-    height: 100vh;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.admin-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.admin-image{
-    width: 50%;
-    height: 100vh;
-    display: flex;
- 
+.admin-image {
+  width: 50%;
+  height: 100vh;
+  display: flex;
 }
 
-.admin-image img{
-    width: 100%;
+.admin-image img {
+  width: 100%;
 }
 
-
-
-.admin-login-form{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center; 
-    text-align: center;
+.admin-login-form {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-.admin-login-form div{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 1rem;
-    width: 100%;
-    margin: 7rem
-
+.admin-login-form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  width: 100%;
+  margin: 7rem;
 }
 
-
-.admin-login-form input{
-    border-radius: 5px;
-    padding: .5rem;
-    width: 100%;
-    border: 1px solid;
-    outline: none;
-
+.admin-login-form input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid;
+  outline: none;
 }

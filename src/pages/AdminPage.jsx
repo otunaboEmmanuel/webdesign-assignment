@@ -53,20 +53,20 @@ function AdminPage() {
   return (
     <div className="admin">
       <div className="admin-side">
+        <h1>ADMIN</h1>
 
-      <h1>ADMIN</h1>
-      
-      <div> 
-
-      <ul>
-        <li> Dashboard</li>
-        <li>Add Student</li>
-        <li>User Managment</li>
-        <li><Link className="sidebarlink" to='/adminlogin'>Logout</Link> </li>
-      
-      </ul>
-      
-       </div>
+        <div>
+          <ul>
+            <li> Dashboard</li>
+            <li>Add Student</li>
+            <li>User Managment</li>
+            <li>
+              <Link className="sidebarlink" to="/adminlogin">
+                Logout
+              </Link>{" "}
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="admin-main">
