@@ -125,8 +125,8 @@ function AdminPage() {
             <thead style={{ color: "white" }}>
               <tr style={{ backgroundColor: "#004282" }}>
                 <th style={{ borderTopLeftRadius: "10px" }}>Schedule Name</th>
-                <th>Class</th>
                 <th>Time</th>
+                <th>Class</th>
                 <th>Date</th>
                 <th style={{ borderTopRightRadius: "10px" }}>Actions</th>
               </tr>
