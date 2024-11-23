@@ -1,13 +1,13 @@
-import "../styles/adminlogin.css";
+import "../styles/login.css";
 import time from "../assets/time.svg";
 
 function AdminLogin() {
   return (
-    <div className="admin-login">
-      <section className="admin-image">
+    <div className="login">
+      <section className="login-image">
         <img src={time} alt="login" />
       </section>
-      <section className="admin-login-form">
+      <section className="login-form">
         <div>
           <h1>Login as Admin</h1>
 
