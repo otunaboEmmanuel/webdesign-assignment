@@ -11,7 +11,7 @@ function App() {
           <p style={{ margin: 0 }}>Login as Admin</p> <Shield /> 
         </Link>
 
-        <Link className="link">
+        <Link className="link" to="/studentlogin">
           <p style={{ margin: 0 }}>Login as Student</p> <School />
         </Link>
       </section>

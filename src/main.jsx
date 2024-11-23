@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
+import StudentLogin from "./pages/StudentLogin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     path: "/admin",
     element: <AdminPage />,
   },
+  {
+    path: '/studentlogin',
+    element: <StudentLogin/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
