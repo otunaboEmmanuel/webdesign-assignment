@@ -12,10 +12,10 @@ function AdminLogin() {
           <h1>Login as Admin</h1>
 
           <label htmlFor="">Email</label>
-          <input type="text" />
+          <input type="email" />
 
           <label htmlFor=""> Password</label>
-          <input type="text" />
+          <input type="password" />
 
           <button className="link" style={{ marginTop: "1rem" }}>
             Login
