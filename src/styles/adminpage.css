@@ -52,3 +52,12 @@ ul li {
   color: white;
   text-decoration: none;
 }
+
+.active-link{
+  color: #004282;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}

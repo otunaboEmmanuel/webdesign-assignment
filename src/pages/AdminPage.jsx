@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "../styles/adminpage.css";
 
 function AdminPage() {
@@ -80,20 +80,12 @@ function AdminPage() {
         <h1>ADMIN</h1>
         <div>
           <ul>
+            <li> <Link className="sidebarlink" to='/admin/dashboard'>Dashboard</Link></li>
+            <li><Link className="sidebarlink" to='/admin/addstudents'>Add Student</Link></li>
             <li>
-              <Link className="sidebarlink" to="/admin/dashboard">
-                Dashboard
-              </Link>
-            </li>
-            <li>
-              <Link className="sidebarlink" to="/admin/addstudents">
-                Add Student
-              </Link>
-            </li>
-            <li>
-              <Link className="sidebarlink" to="/adminlogin">
+              <NavLink className={({ isActive }) => (isActive ? "active-link" : "sidebarlink")} to="/adminlogin">
                 Logout
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
