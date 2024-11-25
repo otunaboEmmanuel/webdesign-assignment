@@ -5,7 +5,7 @@
 }
 
 .admin-side {
-  width: 15%;
+  width: 12rem;
   background-color: #004282;
   padding: 1rem;
   color: white;
@@ -17,13 +17,19 @@
 
 .admin-main {
   height: 100vh;
-  margin-left: 250px;
+  margin-left: 16rem;
   margin-top: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 75%;
 }
 
+.table-header{
+  background-color: #004282;
+  color: white;
+}
 td {
   padding: 1rem;
   text-align: center;
