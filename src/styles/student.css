@@ -1,0 +1,163 @@
+/* General Styling */
+.student-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004282;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #004282;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1001;
+    padding: 20px;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.close-sidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Menu Button */
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    margin: 100px 20px 20px; /* Leave space for the fixed header */
+    display: flex;
+    gap: 20px;
+}
+
+.tasks-section,
+.side-section {
+    flex: 1;
+}
+
+.tasks-section ul,
+.side-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks-section li,
+.side-section li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Buttons */
+.complete-btn,
+.undo-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 30%;
+    align-self: center;
+}
+
+.complete-btn {
+    background-color: #004282;
+}
+
+.undo-btn {
+    background-color: #e63946;
+}
+
+.undo-btn:hover {
+    background-color: #d62828;
+}
+
+/* Completion Bar */
+.completion-bar {
+    margin: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.completion-fill {
+    height: 20px;
+    background: #004282;
+    transition: width 0.3s ease;
+}
+
+.completion-bar p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+}

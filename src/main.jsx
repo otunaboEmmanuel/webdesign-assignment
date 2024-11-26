@@ -13,6 +13,7 @@ import Dashboard from "./components/Dashboard.jsx";
 
 import AddStudents from "./components/AddStudents.jsx";
 import AdminStudents from "./pages/AdminStudents.jsx";
+import StudentPage from "./pages/StudentPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/studentlogin",
     element: <StudentLogin />,
+  },
+  {
+    path: "/studentpage",
+    element: <StudentPage />,
   },
 ]);
 
