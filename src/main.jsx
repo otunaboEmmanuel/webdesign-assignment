@@ -9,7 +9,7 @@ import App from "./App.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
 import StudentLogin from "./pages/StudentLogin.jsx";
-import StudentPage from "./pages/StudentPage.jsx";
+// import StudentPage from "./pages/StudentPage.jsx";
 import Dashboard from "./components/Dashboard.jsx";
 import AddStudents from "./components/AddStudents.jsx";
 
@@ -37,10 +37,10 @@ const router = createBrowserRouter([
     path: "/studentlogin",
     element: <StudentLogin />,
   },
-  {
-    path: "/student",
-    element: <StudentPage />,
-  },
+  // {
+  //   path: "/student",
+  //   element: <StudentPage />,
+  // },
 ]);
 
 createRoot(document.getElementById("root")).render(
