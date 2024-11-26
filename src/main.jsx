@@ -1,6 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import App from "./App.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
@@ -23,19 +27,20 @@ const router = createBrowserRouter([
     path: "/admin",
     element: <AdminPage />,
 
-    children:[
-      {path:"/admin/dashboard", element:<Dashboard/>},
-      {path:"/admin/addstudents", element:<AddStudents/>}
-    ]
+    children: [
+      { index: true, element: <Navigate to="/admin/dashboard" replace /> },
+      { path: "dashboard", element: <Dashboard /> },
+      { path: "addstudents", element: <AddStudents /> },
+    ],
   },
   {
-    path: '/studentlogin',
-    element: <StudentLogin/>
+    path: "/studentlogin",
+    element: <StudentLogin />,
   },
   {
-    path: '/student',
-    element: <StudentPage/>
-  }
+    path: "/student",
+    element: <StudentPage />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
