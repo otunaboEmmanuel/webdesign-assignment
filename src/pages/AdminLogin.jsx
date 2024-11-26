@@ -12,7 +12,7 @@ function AdminLogin() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:9090/users/login", {
+      const res = await fetch("http://localhost:9090/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,13 +23,13 @@ function AdminLogin() {
       const data = await res.json();
       console.log("API Response:", data);
 
-      if (res.ok) {
+      if (data.code == "00") {
         console.log("Successfully logged in");
         alert("Login Success!")
         navigate("/admin");
       } else {
         console.error("Login failed:", data.message || res.statusText);
-        alert("Invalid Credentials")
+        alert(data.message || "Invalid Credentials")
       }
     } catch (error) {
       console.error("Error during login:", error.message);

@@ -8,6 +8,7 @@ function AdminPage() {
   const [formData, setFormData] = useState({
     startTime: "",
     endTime: "",
+    courseName: "",
     day_of_the_week: "",
   });
 
@@ -57,7 +58,7 @@ function AdminPage() {
           (a, b) => daysOrder.indexOf(a.day_of_the_week) - daysOrder.indexOf(b.day_of_the_week)
         );
       });
-      setFormData({ startTime: "", endTime: "", day_of_the_week: "" }); // Reset form
+      setFormData({ startTime: "", endTime: "", courseName: "", day_of_the_week: "" }); // Reset form
       alert("Schedule added successfully!");
     } catch (error) {
       console.error("Error adding schedule:", error);
@@ -101,6 +102,16 @@ function AdminPage() {
                 type="text"
                 name="endTime"
                 value={formData.endTime}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>
+              Course Name
+              <input
+                type="text"
+                name="courseName"
+                value={formData.courseName}
                 onChange={handleChange}
                 required
               />
