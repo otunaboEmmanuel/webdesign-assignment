@@ -5,13 +5,15 @@ import App from "./App.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
 import StudentLogin from "./pages/StudentLogin.jsx";
+import StudentPage from "./pages/StudentPage.jsx";
+import Dashboard from "./components/Dashboard.jsx";
+import AddStudents from "./components/AddStudents.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
-
   {
     path: "/adminlogin",
     element: <AdminLogin />,
@@ -20,10 +22,19 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: <AdminPage />,
+
+    children:[
+      {path:"/admin/dashboard", element:<Dashboard/>},
+      {path:"/admin/addstudents", element:<AddStudents/>}
+    ]
   },
   {
     path: '/studentlogin',
     element: <StudentLogin/>
+  },
+  {
+    path: '/student',
+    element: <StudentPage/>
   }
 ]);
 
