@@ -63,9 +63,10 @@ function Dashboard() {
           <p>Fill the form below to add a new schedule</p>
           <form
             onSubmit={addSchedule}
-            style={{ isplay: "flex", gap: "15px", marginBottom: "20px" }}
+            style={{ display: "flex", gap: "15px", marginBottom: "20px" }}
           >
             <input
+              style={{padding:'5px'}}
               type="text"
               name="name"
               placeholder="Schedule Name"
