@@ -10,7 +10,9 @@ import AdminPage from "./pages/AdminPage.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
 import StudentLogin from "./pages/StudentLogin.jsx";
 import Dashboard from "./components/Dashboard.jsx";
+
 import AddStudents from "./components/AddStudents.jsx";
+import AdminStudents from "./pages/AdminStudents.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/adminlogin",
     element: <AdminLogin />,
+  },
+  {
+    path: "/addstudents",
+    element: <AdminStudents />,
   },
   {
     path: "/admin",

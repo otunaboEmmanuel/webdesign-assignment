@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 import "../styles/adminpage.css";
+import Sidebar from "../components/Sidebar";
 
 function AdminPage() {
   const [schedules, setSchedules] = useState([]);
@@ -76,20 +77,7 @@ function AdminPage() {
 
   return (
     <div className="admin">
-      <div className="admin-side">
-        <h1>ADMIN</h1>
-        <div>
-          <ul>
-            <li> <Link className="sidebarlink" to='/admin/dashboard'>Dashboard</Link></li>
-            <li><Link className="sidebarlink" to='/admin/addstudents'>Add Student</Link></li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive ? "active-link" : "sidebarlink")} to="/adminlogin">
-                Logout
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Sidebar />
       <div className="admin-main">
         <div>
           <h1>Welcome Dr Jerry</h1>
